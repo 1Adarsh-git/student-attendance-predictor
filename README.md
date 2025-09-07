@@ -2,8 +2,6 @@
 
 **A beginner-friendly, end-to-end machine learning pipeline that predicts whether a student will attend a campus event using binary classification.**
 
-🚀 **Perfect for hackathons, tech events, and showcasing your ML skills!**
-
 ## 📋 Project Overview
 
 This project builds a complete ML pipeline to predict student event attendance based on:
@@ -21,16 +19,14 @@ student-attendance-predictor/
 │  ├─ events.csv                    # 200 synthetic events
 │  ├─ users.csv                     # 1000 synthetic students  
 │  ├─ attendance.csv                # 5000 user-event pairs with labels
-│  └─ processed_data.npz           # Preprocessed training data
-├─ notebooks/
-│  ├─ 01_data_generation_and_EDA.ipynb     # Data generation & analysis
-│  └─ 02_modeling_and_evaluation.ipynb    # Model training & evaluation
+│  └─ processed_data.npz            # Preprocessed training data
 ├─ src/
+│  ├─ __init__.py 
 │  ├─ data_generation.py           # Generate synthetic datasets
 │  ├─ preprocess.py                # Feature engineering pipeline
 │  ├─ model_train.py               # Model training & evaluation
 │  ├─ explainability.py            # Model interpretation
-│  └─ app_streamlit.py             # Interactive web demo
+│  └─ show_all_plots.py            # Display result 
 ├─ models/
 │  ├─ attendance_model.pkl         # Best trained model
 │  └─ preprocessor.joblib          # Fitted preprocessing pipeline
@@ -40,7 +36,6 @@ student-attendance-predictor/
 │  └─ feature_importance.csv       # Feature importance rankings
 ├─ requirements.txt                # Python dependencies
 ├─ README.md                       # This file
-└─ demo_script.txt                # 90-second presentation script
 ```
 
 ## 🚀 Quick Start
@@ -61,41 +56,24 @@ pip install -r requirements.txt
 
 ### 2. Run the Interactive Demo
 
-```bash
-# Launch the Streamlit web app
-streamlit run src/app_streamlit.py
-```
-
-The demo will open in your browser with an interactive interface to:
-- Input student and event characteristics
-- Get real-time attendance predictions with explanations
-- Upload CSV files for batch predictions
-
-### 3. Explore the Notebooks
-
-```bash
-# Start Jupyter
-jupyter notebook
-
-# Open either notebook:
-# - notebooks/01_data_generation_and_EDA.ipynb
-# - notebooks/02_modeling_and_evaluation.ipynb
-```
 
 ### 4. Regenerate Everything from Scratch
 
 ```bash
 # Generate new synthetic data
-python src/data_generation.py
+python3 src/data_generation.py
 
 # Preprocess the data
-python src/preprocess.py
+python3 src/preprocess.py
 
 # Train models
-python src/model_train.py
+python3 src/model_train.py
 
 # Generate explainability reports
-python src/explainability.py
+PYTHONPATH=. python3 src/explainability.py
+
+#Displays all the graphs
+PYTHONPATH=. python3 src/show_all_plots.py
 ```
 
 ## 📊 Data Schema
