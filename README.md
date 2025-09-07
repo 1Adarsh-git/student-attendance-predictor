@@ -54,10 +54,9 @@ source venv/bin/activate   # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### 2. Run the Interactive Demo
 
 
-### 4. Regenerate Everything from Scratch
+### 2. Regenerate Everything from Scratch
 
 ```bash
 # Generate new synthetic data
@@ -150,21 +149,7 @@ PYTHONPATH=. python3 src/show_all_plots.py
 - **Well-documented**: Comprehensive notebooks and inline documentation
 - **Beginner-friendly**: Uses only standard ML libraries (scikit-learn, pandas, streamlit)
 
-## 📱 Streamlit Demo Features
-
-- **Interactive prediction**: Real-time attendance probability calculation
-- **Smart explanations**: Human-readable reasons for each prediction
-- **Batch processing**: Upload CSV for multiple predictions
-- **Visual insights**: Department and event type statistics
-- **User-friendly**: Clean interface with helpful tooltips
-
 ## 🎯 Use Cases
-
-### For Students (like you!):
-- **Hackathon projects**: Complete end-to-end ML pipeline
-- **Portfolio showcase**: Demonstrates data science skills
-- **Interview preparation**: Real-world problem with business impact
-- **Learning tool**: Best practices for ML project structure
 
 ### For Institutions:
 - **Event planning**: Optimize resource allocation
@@ -174,10 +159,7 @@ PYTHONPATH=. python3 src/show_all_plots.py
 
 ## 🚀 Future Improvements
 
-### Model Enhancements:
-- **Advanced algorithms**: Try XGBoost, LightGBM for better performance
-- **Deep learning**: Neural networks for complex pattern recognition
-- **Ensemble methods**: Combine multiple models for robust predictions
+
 
 ### Feature Engineering:
 - **Temporal features**: Seasonality, exam periods, holidays
@@ -206,20 +188,6 @@ This project is for educational purposes. Feel free to use it in your portfolio,
 
 ## 👨‍💻 Author
 
-**Built as a comprehensive ML learning project - perfect for students entering the tech industry!**
+**Built as a learning project**
 
 ---
-
-### 💡 Pro Tips for Presentations:
-
-1. **Start with the business problem**: "How can we predict student event attendance?"
-2. **Show the data**: Real examples from the synthetic dataset
-3. **Demo the app**: Live predictions with explanations
-4. **Discuss insights**: What factors drive attendance?
-5. **Technical highlights**: Feature engineering, model selection, evaluation metrics
-
-**Perfect for:** Hackathons • Internship applications • Portfolio projects • Technical interviews
-
----
-
-*This project demonstrates end-to-end machine learning skills highly valued by tech companies and startups. Use it to showcase your ability to solve real-world problems with data!*
