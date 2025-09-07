@@ -44,6 +44,7 @@ student-attendance-predictor/
 
 ```bash
 # Clone or download the project
+git clone https://github.com/1Adarsh-git/student-attendance-predictor.git
 cd student-attendance-predictor
 
 # Create virtual environment (recommended)
